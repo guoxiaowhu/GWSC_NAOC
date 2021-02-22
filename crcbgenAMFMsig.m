@@ -11,4 +11,4 @@ AmpVec = cos(AphaVec);
 phaseVec = 2*pi* f_0*dataX + b*AmpVec;
 sigVec = sin(phaseVec);
 
-sigVec = snr* AmpVec *sigVec/norm(sigVec);
+sigVec = snr* AmpVec .*sigVec/norm(sigVec);

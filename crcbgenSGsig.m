@@ -8,4 +8,4 @@ phaseVec = 2*pi* f_0*dataX + phi_0;
 sigVec = sin(phaseVec);
 norTim = (dataX-t_0)^2/(2*sigma^2);
 ExpVec = exp(-norTim);
-sigVec = snr*sigVec/norm(sigVec)*ExpVec;
+sigVec = snr*sigVec/norm(sigVec).*ExpVec;

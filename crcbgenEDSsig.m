@@ -8,5 +8,5 @@ Delt = dataX-t_a;
 phaseVec = 2*pi*f_0* dataX  + phi_0;
 sigVec = sin(phaseVec);
 ExpVec = exp(-Delt/tau);
-t_a<=dataX<=t_a+L; sigVec = snr* ExpVec*sigVec/norm(sigVec);
+t_a<=dataX<=t_a+L; sigVec = snr* ExpVec.*sigVec/norm(sigVec);
 (data<t_a)|(data> t_a+L);sigVec =0;
