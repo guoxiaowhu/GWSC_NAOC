@@ -10,5 +10,8 @@ phaseVec2 = 2*pi*f_1*(t-t_a)+2*pi*f_0*t_a;
 
 sigVec1 = sin(phaseVec1);
 sigVec2 = sin(phaseVec2);
-dataX<=t_a; sigVec = snr*sigVec1/norm(sigVec1);
-data>t_a;sigVec = snr*sigVec2/norm(sigVec2);
+cond = t<=t_a;
+
+sigVec(cond) = snr*sigVec1(cond)/norm(sigVec1(cond));
+sigVec(~cond) = snr*sigVec2(~cond)/norm(sigVec2(~cond));
+
