@@ -8,4 +8,4 @@ Our group include [Xiao Guo](https://github.com/guoxiaowhu), [Yunlong Zhang](htt
 ## Reference
 Our codes have referrd to [Soumya D. Mohanty](https://github.com/mohanty-sd)'s [GWSC](https://github.com/mohanty-sd/GWSC), and [DATASCIENCE_COURSE](https://github.com/mohanty-sd/DATASCIENCE_COURSE).
 ## Other links
-You can also see repositories of other groups like [GWSC_CQU](https://github.com/gwsccqu/GWSC_CQU)
+You can also see repositories of other groups like [GWSC_CQU](https://github.com/gwsccqu/GWSC_CQU), [GWSC_HUST](https://github.com/wenfanfeng/GWSC_HUST).
