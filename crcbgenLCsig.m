@@ -8,6 +8,6 @@ function sigVec = crcbgenLCsig(dataX,snr,f_0,f_1,phi_0)
 
 %Xiao Guo Feb. 2021
 
-phaseVec = 2*pi*(f_0*dataX + f_1*dataX^2) + phi_0;
+phaseVec = 2*pi*(f_0*dataX + f_1*dataX.^2) + phi_0;
 sigVec = sin(phaseVec);
 sigVec = snr*sigVec/norm(sigVec);
