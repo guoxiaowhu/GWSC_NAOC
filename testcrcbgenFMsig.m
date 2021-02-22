@@ -1,21 +1,18 @@
-%% Plot the AM-FM signal
+%% Plot the AM signal
 % Signal parameters
 b = 10;
 f_0= 40;
-f_1 = 5;
+f_1 = 10;
 A=10;
 %where f_0 > f_1
 
-
-% According to product to sum formula, sin(A)cos(B)=(sin(A+B)+sin(A-B))/2
-% thus for AM signal, the maximum frequency is f_1 + max(phi'(t))/(2*pi)
 % for FM signal
 %phi(t)=2*pi*f_0*t + b*cos(2*pi*f_1*t)
 %phi'(t)=2*pi*f_0 - b*2*pi*f_1*sin(2*pi*f_1*t)
 %max(phi'(t)) = 2*pi*f_0 + b*2*pi* f_1
-%thus the maximum frequency of AM-FM signal is f_1 + f_0 + b* f_1
+%thus the maximum frequency of AM-FM signal is f_1 + 2*pi*f_0 + b*2*pi* f_1
 
-maxFreq = f_1 + f_0 + b*f_1;
+maxFreq =  f_0 + b*f_1;
 samplFreq = 5*maxFreq;% >2
 samplIntrvl = 1/samplFreq;
 
@@ -25,7 +22,7 @@ timeVec = 0:samplIntrvl:1.0;
 nSamples = length(timeVec);
 
 % Generate the signal
-sigVec =  crcbgenAMFMsig(timeVec,A,b,f_0,f_1);
+sigVec =  crcbgenFMsig(timeVec,A,b,f_0,f_1);
 %Plot the signal 
 figure;
 plot(timeVec,sigVec,'Marker','.','MarkerSize',24);
