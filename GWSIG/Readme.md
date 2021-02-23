@@ -18,3 +18,6 @@ _Strain\_Tensor.m_
 ## With Antenna Pattern Function
 s = hp * Fp + hc * Fc
 _Strain\_F.m_ (with _detframefpfc_psi.m_) 
+
+# LISA
+![LISA orbit](https://raw.githubusercontent.com/guoxiaowhu/GWSC_NAOC/main/figs/LISA_orbitography.gif)
