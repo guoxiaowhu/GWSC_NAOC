@@ -10,6 +10,7 @@ By the way, in Mohanty's code, he left out the 1/2 in the detector tensor, so th
 
 ## Polarization Angle
 In order to increase the polarization angle psi, we write the code _testdetframefpfc\_psi.m_ (with _detframefpfc\_psi.m_ et al) to describe different psi.
+The analytical experssion for antenna pattern function including polarization angle psi is in the code _testdetframefpfc\_psi.m_. We compare two ways and obtain consistent results. 
 
 # Strain
 ## With Tensor Contraction
