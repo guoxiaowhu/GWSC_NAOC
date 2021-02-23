@@ -8,6 +8,7 @@ Code _testdetframefpfc.m_ (with _detframefpfc.m_ et al) plots F_plus and F_cross
 
 By the way, in Mohanty's code, he left out the 1/2 in the detector tensor, so that the result from tensor contraction is as twice as analytical form. We have corrected this bug in our codes. 
 
+## Polarization Angle
 In order to increase the polarization angle psi, we write the code _testdetframefpfc\_psi.m_ (with _detframefpfc\_psi.m_ et al) to describe different psi.
 
 # Strain
