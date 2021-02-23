@@ -32,3 +32,5 @@ end
 %Plot
 surf(X,Y,Z,abs(fVals));
 shading interp;
+axis equal;
+colorbar;

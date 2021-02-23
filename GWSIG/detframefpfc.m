@@ -33,7 +33,7 @@ for lpl = 1:nLocs
 end
 
 %Detector tensor of a perpendicular arm interferometer 
-detTensor = [1,0,0]'*[1,0,0]-[0,1,0]'*[0,1,0];
+detTensor =0.5*([1,0,0]'*[1,0,0]-[0,1,0]'*[0,1,0]);
 fPlus = zeros(1,nLocs);
 fCross = zeros(1,nLocs);
 %For each location ...
