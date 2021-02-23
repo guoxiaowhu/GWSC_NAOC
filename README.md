@@ -5,6 +5,9 @@ These MatLab codes are stored under [_signals_](https://github.com/guoxiaowhu/GW
 
 ## Members
 Our group includes [Xiao Guo](https://github.com/guoxiaowhu), [Yunlong Zhang](https://github.com/zhangyunlong001), [Da Huang](https://github.com/huangda300), [Qing Yang](https://github.com/yQing-121).
+
+## Demo
+![LISA orbit](https://raw.githubusercontent.com/guoxiaowhu/GWSC_NAOC/main/figs/LISA_orbitography.gif)
 ## Reference
 Our codes have referrd to [Soumya D. Mohanty](https://github.com/mohanty-sd)'s [GWSC](https://github.com/mohanty-sd/GWSC), and [DATASCIENCE_COURSE](https://github.com/mohanty-sd/DATASCIENCE_COURSE). Our teaching assistants are [Xiaobo Zou](https://github.com/xiaobozou) and [Xuehao Zhang](https://github.com/David-Zhang1) 
 ## Other links
