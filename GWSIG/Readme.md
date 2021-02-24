@@ -16,8 +16,7 @@ The analytical experssion for antenna pattern function including polarization an
 ## With Tensor Contraction
 _Strain\_Tensor.m_ calculates the strain with the contraction of wave tensor and detector tensor.
 ## With Antenna Pattern Function
-s = hp * Fp + hc * Fc
-_Strain\_F.m_ (with _detframefpfc_psi.m_) directly computes the strain according to antenna pattern function.
+According to  s = hp * Fp + hc * Fc, _Strain\_F.m_ (with _detframefpfc_psi.m_) directly computes the strain based on antenna pattern function.
 
 # LISA
 Accoring to Soumya D. Mohanty's code, we can plot a GIF file to show the orbit of LISA
