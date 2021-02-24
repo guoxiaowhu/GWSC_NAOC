@@ -19,5 +19,8 @@ _Strain\_Tensor.m_ calculates the strain with the contraction of wave tensor and
 According to  s = hp * Fp + hc * Fc, _Strain\_F.m_ (with _detframefpfc_psi.m_) directly computes the strain based on antenna pattern function.
 
 # LISA
+## LISA's Orbit
 Accoring to Soumya D. Mohanty's code, we can plot a GIF file to show the orbit of LISA
 ![LISA orbit](https://raw.githubusercontent.com/guoxiaowhu/GWSC_NAOC/main/figs/LISA_orbitography.gif)
+
+## LISA's Antenna Pattern Function
