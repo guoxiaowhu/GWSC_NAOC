@@ -22,9 +22,11 @@ figure;
 hold on;
 plot([a,b],[Uf,Uf],'r');
 histogram(U,'normalization','pdf');
-xlabel('x')
-ylabel('PDF')
+xlabel('x');
+ylabel('PDF');
 figure;
 hold on;
 plot(xx,yy,'r');
 histogram(N,'normalization','pdf');
+xlabel('x');
+ylabel('PDF');
