@@ -13,4 +13,7 @@ It follows a normal distribution.
 
 We write code _testdatadeal.m_ to deal with _testData.txt_ with a function _WhitenNoise.m_ to whiten noise. It is a colorful noise with PSD ![PSD](https://raw.githubusercontent.com/guoxiaowhu/GWSC_NAOC/main/figs/PSDcolor.png)
 Before whitening noise, its time-frequency spetrogram is ![ColorNoise](https://raw.githubusercontent.com/guoxiaowhu/GWSC_NAOC/main/figs/ColorSpe.png)
-After whitening noise, its time-frequency spectrogram is shown as ![](https://raw.githubusercontent.com/guoxiaowhu/GWSC_NAOC/main/figs/WhitenSpe.png)
+After whitening noise, its time-frequency spectrogram is shown as ![](https://raw.githubusercontent.com/guoxiaowhu/GWSC_NAOC/main/figs/WhitenSpe.png). The signal is located around t=15s.
+The time coordinate may be not correct (to be checked).
+
+# Simulating LIGO noise
