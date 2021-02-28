@@ -28,7 +28,7 @@ t_a =0.4;
 f_0 = 40;
 f_1 =100;
 phi_0 =0;
-L=0.5;
+L=1;
 sigVec = crcbgenLTCsig(timeVec,A,t_a,f_0,f_1,phi_0,L);
 
 %%
@@ -102,5 +102,30 @@ plot(timeVec,sigVec);
 xlabel('Time (sec)');
 ylabel('Data');
 
+%Plot the periodogram
+%--------------
+
+posFreq = (0:(kNyq-1))*(1/dataLen);
+% FFT of data
+fftSig = fft(dataVec);
+% Discard negative frequencies
+fftSig = fftSig(1:kNyq);
+
+%Plot periodogram
+figure;
+plot(posFreq,abs(fftSig));
+
+%Plot a spectrogram
+%----------------
+winLen = 0.04;%sec #can't be too small
+ovrlp = 0.02;%sec
+%Convert to integer number of samples 
+winLenSmpls = floor(winLen*sampFreq);
+ovrlpSmpls = floor(ovrlp*sampFreq);
+[S,F,T]=spectrogram(dataVec,winLenSmpls,ovrlpSmpls,[],sampFreq);
+figure;
+imagesc(T,F,abs(S)); axis xy;
+xlabel('Time (sec)');
+ylabel('Frequency (Hz)');
 
 
