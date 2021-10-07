@@ -19,7 +19,7 @@ el = 20;
 % Display settings
 h = figure;
 set(h,'Position',get(0,'ScreenSize'));
-set(gcf,'Color',[0 0 0]);
+set(gcf,'Color',[1 1 1]);
 axis tight manual;
 orbit_bounds = false;
 LISA_relative_circular_orbit = false;
@@ -29,7 +29,7 @@ for k = 1:step:length(Phi)
     
     plot3(E(1,:),E(2,:),E(3,:),'Color',[0 0 1],'Linewidth',3), hold on;
 
-    plot3(Sp1path(1,:),Sp1path(2,:),Sp1path(3,:),'Color',[1 1 0],'Linewidth',2), hold on;
+    plot3(Sp1path(1,:),Sp1path(2,:),Sp1path(3,:),'Color',[0.5 0 0.5],'Linewidth',2), hold on;
     plot3(Sp2path(1,:),Sp2path(2,:),Sp2path(3,:),'Color',[1 0 1],'Linewidth',2), hold on;
     plot3(Sp3path(1,:),Sp3path(2,:),Sp3path(3,:),'Color',[0 1 1],'Linewidth',2), hold on;
     
@@ -38,7 +38,7 @@ for k = 1:step:length(Phi)
         plot3(Spsup(1,:),Spsup(2,:),Spsup(3,:),'Color',[0 1 0]), hold on;
     end
 
-    plot3(Sp1path(1,k),Sp1path(2,k),Sp1path(3,k),'o','Color',[1 1 0],'Linewidth',3), hold on;
+    plot3(Sp1path(1,k),Sp1path(2,k),Sp1path(3,k),'o','Color',[0.5 0 0.5],'Linewidth',3), hold on;
     plot3(Sp2path(1,k),Sp2path(2,k),Sp2path(3,k),'o','Color',[1 0 1],'Linewidth',3), hold on;
     plot3(Sp3path(1,k),Sp3path(2,k),Sp3path(3,k),'o','Color',[0 1 1],'Linewidth',3), hold on;
 
@@ -49,17 +49,17 @@ for k = 1:step:length(Phi)
     plot3(Spcft(1,:),Spcft(2,:),Spcft(3,:),'Color',[1 0 0],'Linewidth',3), hold on;    
     
     if LISA_relative_circular_orbit
-        plot3(C_total(1,:,k),C_total(2,:,k),C_total(3,:,k),'Color',[1 1 1]), hold on;
+        plot3(C_total(1,:,k),C_total(2,:,k),C_total(3,:,k),'Color',[0 0 0]), hold on;
     end
     
     plot3(E(1,k),E(2,k),E(3,k),'o','Color',[0 0 1],'Linewidth',12), hold on;
-    plot3(0,0,0,'o','Color',[1 1 0],'Linewidth',28), hold on;   
+    plot3(0,0,0,'o','Color',[0.7 0.7 0],'Linewidth',28), hold on;   
         
     axis([-(4*R/3) (4*R/3) -(4*R/3) (4*R/3) -(R/3) (R/3)]);
     axis square, axis equal, axis off;
     grid off;
     
-    title(title_text,'FontSize',16,'Color',[1 1 1]), hold on;
+    title(title_text,'FontSize',32,'Color',[0 0 0]), hold on;
     view(az,el);
     
     drawnow;
