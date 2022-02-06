@@ -1,1 +1,1 @@
-Here are all tasks.
+Here are all tasks, lecture notes, textbooks and so on.
