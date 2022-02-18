@@ -28,7 +28,8 @@ fltrOrdr = 1000;
 
 outNoise = statgaussnoisegen(nSamples,[linfreq(:),linPSD(:)],fltrOrdr,sampFreq);
 
-[pxx,f]=pwelch(outNoise, 2048,[],[],sampFreq);
+[pxx1,f]=pwelch(outNoise, 2048,[],[],sampFreq);%one side PSD
+pxx=pxx1/2;%two side PSD
 figure;
 hold on;
 plot(f,pxx,'b');
